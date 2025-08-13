@@ -1,0 +1,922 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "checkout-form-validations;missing-first-name-shows-error",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Missing first name shows error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 761674099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 644699,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\purchase.steps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I add product \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "location": "steps\\purchase.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "steps\\purchase.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I enter shipping info \"\" \"User\" \"98052\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see checkout error \"Error: First Name is required\"",
+            "match": {
+              "location": "steps\\checkout_negative.steps.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 277550699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@extended",
+            "line": 8
+          },
+          {
+            "name": "@negative",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-form-validations;missing-last-name-shows-error",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Missing last name shows error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 687536799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 384400,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\purchase.steps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I add product \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "location": "steps\\purchase.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "steps\\purchase.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I enter shipping info \"QA\" \"\" \"98052\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see checkout error \"Error: Last Name is required\"",
+            "match": {
+              "location": "steps\\checkout_negative.steps.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 314729399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@extended",
+            "line": 13
+          },
+          {
+            "name": "@negative",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "checkout-form-validations;missing-postal-code-shows-error",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Missing postal code shows error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 655772399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 599400,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\purchase.steps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I add product \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "location": "steps\\purchase.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "steps\\purchase.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I enter shipping info \"QA\" \"User\" \"\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see checkout error \"Error: Postal Code is required\"",
+            "match": {
+              "location": "steps\\checkout_negative.steps.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 344854500
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@extended",
+            "line": 18
+          },
+          {
+            "name": "@negative",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-form-validations",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout form validations",
+    "tags": [],
+    "uri": "features\\checkout_negative.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;validate-the-login-page-title",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Validate the login page title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 752766800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps\\common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 962303700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the login page",
+            "match": {
+              "location": "steps\\login.steps.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 569499,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\login.steps.ts:7:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the title \"Swag Labs\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 289687100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;validate-login-error-message",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Validate login error message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 679904000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps\\common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712411500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I try to login with username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "steps\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 783400,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\login.steps.ts:10:14)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see login error \"Incorrect credentials\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 369162399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-sorting;validate-product-sort-by-price",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Validate product sort by price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 968923600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps\\common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 675481900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I sort products by \"lohi\"",
+            "match": {
+              "location": "steps\\products.steps.ts:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 890499,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at ProductsPage.get sortSelect [as sortSelect] (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\products.page.ts:7:46)\n    at ProductsPage.selectSort (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\products.page.ts:24:12)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\products.steps.ts:18:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the selected sort option should be \"lohi\"",
+            "match": {
+              "location": "steps\\products.steps.ts:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the prices should be in \"ascending\" order",
+            "match": {
+              "location": "steps\\products.steps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the first product should be \"Sauce Labs Onesie\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the last should be \"Sauce Labs Fleece Jacket\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 538536700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@price",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-sorting;validate-product-sort-by-price",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Validate product sort by price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1095641299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the \"https://www.saucedemo.com/\" page",
+            "match": {
+              "location": "steps\\common.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647928599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I sort products by \"hilo\"",
+            "match": {
+              "location": "steps\\products.steps.ts:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 367899,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at ProductsPage.get sortSelect [as sortSelect] (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\products.page.ts:7:46)\n    at ProductsPage.selectSort (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\products.page.ts:24:12)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\products.steps.ts:18:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the selected sort option should be \"hilo\"",
+            "match": {
+              "location": "steps\\products.steps.ts:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the prices should be in \"descending\" order",
+            "match": {
+              "location": "steps\\products.steps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the first product should be \"Sauce Labs Fleece Jacket\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the last should be \"Sauce Labs Onesie\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 499766400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@price",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-sorting",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product sorting",
+    "tags": [],
+    "uri": "features\\product.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "purchase-feature;validate-successful-purchase-text",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Validate successful purchase text",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1091852400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I login as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 347999,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\purchase.steps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I add product \"Sauce Labs Backpack\" to the cart",
+            "match": {
+              "location": "steps\\purchase.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "steps\\purchase.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I enter shipping info \"QA\" \"User\" \"98052\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I place the order",
+            "match": {
+              "location": "steps\\purchase.steps.ts:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see the purchase success text \"THANK YOU FOR YOUR ORDER\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 622857700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "purchase-feature;validate-purchase-with-multiple-items",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Validate purchase with multiple items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1169191200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I login as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 478900,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'locator')\n    at new LoginPage (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\pages\\login.page.ts:13:26)\n    at World.<anonymous> (C:\\Users\\bindu\\Playwright-Cucumber-Exercise\\steps\\purchase.steps.ts:11:15)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Backpack"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sauce Labs Bike Light"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I add the following products to the cart:",
+            "match": {
+              "location": "steps\\purchase.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "steps\\purchase.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter shipping info \"QA\" \"User\" \"98052\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I place the order",
+            "match": {
+              "location": "steps\\purchase.steps.ts:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see the purchase success text \"THANK YOU FOR YOUR ORDER\"",
+            "match": {
+              "location": "steps\\purchase.steps.ts:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 593867800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "purchase-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Purchase Feature",
+    "tags": [],
+    "uri": "features\\purchase.feature"
+  }
+]
